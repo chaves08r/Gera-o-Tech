@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital College</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Formulário</h1>
+  <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma.</p>
+
+  <form id="survey-form">
+    <fieldset>
+        <label for="name" id="name-label">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Insira seu nome" required>
+        <label for="email" id="email-label">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required>
+        <label for="number" id="number-label">Idade:</label>
+        <input type="number" id="number" name="number" min="1" max="100" placeholder="Insira sua idade" required>
+        <!-- Botões de rádio corrigidos com o atributo name e value -->
+        <label for="radio1" id="radio-label">Opção 1</label>
+        <input type="radio" name="radio_group" value="opcao1">
+        <label for="radio2" id="radio-label">Opção 2</label>
+        <input type="radio" name="radio_group" value="opcao2">
+        <input type="checkbox" name="checkbox_group" value="teste"> Teste
+        <input type="checkbox" name="checkbox_group" value="teste1"> Teste 1
+        <!-- Seletor dropdown corrigido com o atributo name -->
+        <label for="select_example">Escolha uma opção:</label>
+        <select name="select_example" id="dropdown">
+            <option value="">Selecione uma opção</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+        </select>
+        <textarea name="textarea_example" rows="4" cols="50" placeholder="Digite sua resposta aqui..."></textarea>
+    </fieldset>
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+</body>
+</html>

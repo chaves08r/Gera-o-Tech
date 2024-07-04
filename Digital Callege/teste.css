@@ -1,0 +1,61 @@
+header {
+    background-color: rgb(193, 87, 241);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.titulo {
+    background: rgb(255, 0, 179);
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.text {
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    text-align: justify;
+}
+
+.conteudo {
+    color: rgb(107, 43, 93);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.equipe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.membro {
+    margin: 20px;
+}
+
+.centralized-div {
+    width: 100px;
+    height: 4px;
+    background-color: rgb(255, 0, 179);
+    margin: 0 auto; 
+}
+
+footer {
+    background: rgb(255, 0, 179);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

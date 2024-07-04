@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Projetinho</title>
+</head>
+<body>
+    
+    <header>
+        <input type="text" id="busca" placeholder="pesquisar por titulo">
+
+    </header>
+    <main>
+        <section id="tarefas">
+            <h2>Tarefas <button onclick="novaTarefa()">Nova Tarefa</button></h2>
+            <ul id="lista">
+            </ul>
+            <h6>Nenhuma tarefa registrada</h6>
+        </section>
+        <section id="overlay"></section>
+        <div id="criarTarefa" class="modal">
+            <form onsubmit="inserirTarefa()">
+                <h3>Criar tarefas <i class='bx bxs-x-circle' onclick="fecharModal()"></i></h3>
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo" required>
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" required></textarea>
+                <button>Criar</button>
+
+            </form>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+   
+    
+</body>
+</html>
